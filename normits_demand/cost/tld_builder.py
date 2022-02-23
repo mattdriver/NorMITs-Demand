@@ -334,7 +334,7 @@ class TripLengthDistributionBuilder:
                         raise ValueError('%d non-recognised purpose' % row['p'])
 
             # Seed values so they can go MIA
-            trip_origin, purpose, mode, tp, soc, ns = [0, 0, 0, 0, 0, 0]
+            trip_origin, purpose, mode, tp, soc, ns = ['', 0, 0, 0, 0, 0]
             tfn_at, agg_at, g, ca, agg_gor_from, agg_gor_to = [0, 0, 0, 0, 0, 0]
 
             for subset, value in row.iteritems():
